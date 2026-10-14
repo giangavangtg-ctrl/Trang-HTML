@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành nhúng CSS</title>
+
+    <!-- PHẦN 3: EXTERNAL-STYLE (Nhúng file CSS bên ngoài) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PHẦN 2: INTERNAL-STYLE (Nhúng trong thẻ style của head) -->
+    <style>
+        .title-internal {
+            color: green;
+        }
+        .text-internal {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PHẦN 1: INLINE-STYLE (Viết trực tiếp vào thuộc tính style của thẻ) -->
+    <h1 style="color: red;">Phần 1: Tiêu đề màu đỏ bằng Inline-style</h1>
+    <p style="color: blue;">Đoạn văn này được đổi màu xanh dương trực tiếp bằng thuộc tính style bên trong thẻ p.</p>
+    
+    <hr> <!-- Đường kẻ ngang phân cách -->
+
+    <!-- PHẦN 2: INTERNAL-STYLE -->
+    <h1 class="title-internal">Phần 2: Tiêu đề màu xanh lá bằng Internal-style</h1>
+    <p class="text-internal">Đoạn văn này được đổi màu cam thông qua bộ chọn CSS đặt trong thẻ style ở phần head.</p>
+    
+    <hr>
+
+    <!-- PHẦN 3: EXTERNAL-STYLE -->
+    <h1 class="title-external">Phần 3: Tiêu đề màu tím bằng External-style</h1>
+    <p class="text-external">Đoạn văn này được đổi màu thông qua file style.css hoàn toàn riêng biệt.</p>
+
+</body>
+</html>
